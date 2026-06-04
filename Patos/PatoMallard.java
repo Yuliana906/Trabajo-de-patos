@@ -7,10 +7,18 @@ public class PatoMallard extends pato
 {
     public PatoMallard()
     {
-        comportamientoVuelo = new VolarConAlas();
-        comportamientoGraznido = new Quack();
+        establecerComportamientoDeVuelo(
+            new VolarConAlas(),
+            "VolarConAlas"
+        );
+
+        establecerComportamientoDeGraznido(
+            new Quack(),
+            "Quack"
+        );
     }
 
+    @Override
     public void dibujar()
     {
         System.out.println("Soy un Pato Mallard");

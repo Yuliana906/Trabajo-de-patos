@@ -7,10 +7,18 @@ public class PatoMandarin extends pato
 {
     public PatoMandarin()
     {
-        comportamientoVuelo = new VolarConAlas();
-        comportamientoGraznido = new Quack();
+        establecerComportamientoDeVuelo(
+            new VolarConAlas(),
+            "VolarConAlas"
+        );
+
+        establecerComportamientoDeGraznido(
+            new Quack(),
+            "Quack"
+        );
     }
 
+    @Override
     public void dibujar()
     {
         System.out.println("Soy un Pato Mandarin");

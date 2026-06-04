@@ -5,8 +5,11 @@ import IComportamientoDeVuelo.ComportamientoDeVuelo;
 
 public abstract class pato
 {
-    protected ComportamientoDeVuelo comportamientoVuelo;
-    protected ComportamientodeGraznido comportamientoGraznido;
+    private ComportamientoDeVuelo comportamientoVuelo;
+    private ComportamientodeGraznido comportamientoGraznido;
+
+    private String tipoVuelo;
+    private String tipoGraznido;
 
     public void nadar()
     {
@@ -24,15 +27,29 @@ public abstract class pato
     }
 
     public void establecerComportamientoDeVuelo(
-            ComportamientoDeVuelo comportamientoVuelo)
+            ComportamientoDeVuelo comportamientoVuelo,
+            String tipoVuelo)
     {
         this.comportamientoVuelo = comportamientoVuelo;
+        this.tipoVuelo = tipoVuelo;
     }
 
     public void establecerComportamientoDeGraznido(
-            ComportamientodeGraznido comportamientoGraznido)
+            ComportamientodeGraznido comportamientoGraznido,
+            String tipoGraznido)
     {
         this.comportamientoGraznido = comportamientoGraznido;
+        this.tipoGraznido = tipoGraznido;
+    }
+
+    public String getTipoVuelo()
+    {
+        return tipoVuelo;
+    }
+
+    public String getTipoGraznido()
+    {
+        return tipoGraznido;
     }
 
     public abstract void dibujar();
