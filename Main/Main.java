@@ -5,6 +5,7 @@ import Patos.PatoDeHule;
 import Patos.PatoMallard;
 import Patos.PatoMandarin;
 import Patos.pato;
+import Patos.VendedorDeRosas;
 
 public class Main
 {
@@ -39,5 +40,13 @@ public class Main
         pato4.dibujar();
         pato4.emprenderVuelo();
         pato4.hacerQuack();
+
+        System.out.println();
+
+        pato pato5 = new VendedorDeRosas();
+
+        pato5.dibujar();
+        pato5.emprenderVuelo();
+        pato5.hacerQuack();
     }
 }

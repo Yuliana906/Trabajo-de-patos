@@ -7,15 +7,8 @@ public class PatoMandarin extends pato
 {
     public PatoMandarin()
     {
-        establecerComportamientoDeVuelo(
-            new VolarConAlas(),
-            "VolarConAlas"
-        );
-
-        establecerComportamientoDeGraznido(
-            new Quack(),
-            "Quack"
-        );
+        establecerComportamientoDeVuelo(new VolarConAlas());
+        establecerComportamientoDeGraznido(new Quack());
     }
 
     @Override

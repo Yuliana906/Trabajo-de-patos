@@ -1,21 +1,14 @@
 package Patos;
 
-import ComportamientoGraznido.Mudo;
+import ComportamientoGraznido.Quack;
 import IComportamientoDeVuelo.SinVuelo;
 
 public class PatoDeCasa extends pato
 {
     public PatoDeCasa()
     {
-        establecerComportamientoDeVuelo(
-            new SinVuelo(),
-            "SinVuelo"
-        );
-
-        establecerComportamientoDeGraznido(
-            new Mudo(),
-            "Mudo"
-        );
+        establecerComportamientoDeVuelo(new SinVuelo());
+        establecerComportamientoDeGraznido(new Quack());
     }
 
     @Override

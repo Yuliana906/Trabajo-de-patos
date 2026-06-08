@@ -7,15 +7,8 @@ public class PatoMallard extends pato
 {
     public PatoMallard()
     {
-        establecerComportamientoDeVuelo(
-            new VolarConAlas(),
-            "VolarConAlas"
-        );
-
-        establecerComportamientoDeGraznido(
-            new Quack(),
-            "Quack"
-        );
+        establecerComportamientoDeVuelo(new VolarConAlas());
+        establecerComportamientoDeGraznido(new Quack());
     }
 
     @Override

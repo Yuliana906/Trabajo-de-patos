@@ -8,9 +8,6 @@ public abstract class pato
     private ComportamientoDeVuelo comportamientoVuelo;
     private ComportamientodeGraznido comportamientoGraznido;
 
-    private String tipoVuelo;
-    private String tipoGraznido;
-
     public void nadar()
     {
         System.out.println("Todos los patos nadan.");
@@ -26,30 +23,14 @@ public abstract class pato
         comportamientoVuelo.volar();
     }
 
-    public void establecerComportamientoDeVuelo(
-            ComportamientoDeVuelo comportamientoVuelo,
-            String tipoVuelo)
+    public void establecerComportamientoDeVuelo(ComportamientoDeVuelo comportamientoVuelo)
     {
         this.comportamientoVuelo = comportamientoVuelo;
-        this.tipoVuelo = tipoVuelo;
     }
 
-    public void establecerComportamientoDeGraznido(
-            ComportamientodeGraznido comportamientoGraznido,
-            String tipoGraznido)
+    public void establecerComportamientoDeGraznido(ComportamientodeGraznido comportamientoGraznido)
     {
         this.comportamientoGraznido = comportamientoGraznido;
-        this.tipoGraznido = tipoGraznido;
-    }
-
-    public String getTipoVuelo()
-    {
-        return tipoVuelo;
-    }
-
-    public String getTipoGraznido()
-    {
-        return tipoGraznido;
     }
 
     public abstract void dibujar();
